@@ -20,9 +20,9 @@ function App() {
       :
         <h3>Logged out</h3>
       }
-      <button onClick={()=> dispatch(increment)}>+</button>
-      <button onClick={()=> dispatch(decrement)}>-</button>
-      <button onClick={()=> dispatch(logInOut)}>
+      <button onClick={()=> dispatch(increment(10))}>+</button>
+      <button onClick={()=> dispatch(decrement())}>-</button>
+      <button onClick={()=> dispatch(logInOut())}>
       {isLogged ? <>Log out</>: <>Log in</>}
       </button>
     </div>
